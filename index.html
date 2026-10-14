@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Abdul Kirana Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Aapki apni local kirana dukaan</p>
+    <h1>Abdul Kirana Store</h1>
+    <p>Rozmarra ka samaan, ek hi jagah.</p>
+    <a class="button" href="#products">Samaan dekhein</a>
+  </div>
+</header>
+<main class="wrap">
+  <section class="toolbar">
+    <h2>Hamare products</h2>
+    <input id="search" type="search" placeholder="Samaan khojein…" aria-label="Samaan khojein">
+  </section>
+  <p id="status" class="notice">Products load ho rahe hain…</p>
+  <section id="products" class="products" aria-live="polite"></section>
+  <section class="cartbox">
+    <h2>Aapka cart</h2><div id="cart">Abhi cart khaali hai.</div>
+    <button id="order" class="button">WhatsApp par order bhejein</button>
+    <p class="muted">Order bhejne se pehle dukaan se price aur availability confirm ho sakti hai.</p>
+  </section>
+  <section class="info">
+    <h2>Dukaan se sampark</h2>
+    <p><strong>Address:</strong> DBG Simri Arai Nayatol, Second Road, Bihar 847106</p>
+    <p><strong>Phone / WhatsApp:</strong> Website setup karte waqt apna number add karein.</p>
+  </section>
+</main>
+<footer><div class="wrap">© Abdul Kirana Store</div></footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="config.js"></script><script src="store.js"></script>
+</body></html>
